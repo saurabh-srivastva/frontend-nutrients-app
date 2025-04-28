@@ -11,7 +11,7 @@ document.getElementById('allergenBtn')?.addEventListener('click', async function
     resultElement.innerHTML = `<div class="spinner"></div><div class="loading-text">🔍 Analyzing allergens...</div>`;
     resultElement.style.opacity = 0;
     try {
-        const response = await fetch('http://localhost:5000/predict_allergen', {
+        const response = await fetch('https://backend-nutrient-app.onrender.com/predict_allergen', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text: foodInput })
@@ -59,7 +59,7 @@ document.getElementById('nutritionBtn')?.addEventListener('click', async functio
     resultElement.innerHTML = `<div class="spinner"></div><div class="loading-text">🔍 Calculating nutrition...</div>`;
     resultElement.style.opacity = 0;
     try {
-        const response = await fetch('http://localhost:5000/predict_nutrition', {
+        const response = await fetch('https://backend-nutrient-app.onrender.com/predict_nutrition', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ text: foodInput })
@@ -96,7 +96,7 @@ document.getElementById('recipeBtn')?.addEventListener('click', async function()
     resultElement.innerHTML = `<div class="spinner"></div><div class="loading-text">🔍 Searching recipes...</div>`;
     resultElement.style.opacity = 0;
     try {
-        const response = await fetch('http://localhost:5000/recommend_recipes', {
+        const response = await fetch('https://backend-nutrient-app.onrender.com/recommend_recipes', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({ query: dishInput })
@@ -133,6 +133,9 @@ document.getElementById('recipeBtn')?.addEventListener('click', async function()
     }
 });
 
+// ==========================
+// Helper Function
+// ==========================
 function formatList(text) {
     if (Array.isArray(text)) {
         return text.join('<br>');

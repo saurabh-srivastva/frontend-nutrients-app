@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Nutrition App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" type="image/png" href="favicon.png">
+</head>
+
+<body>
+
+    <header>
+        <img src="logo.png" alt="Nutrition App Logo" class="logo" />
+        <h1>The Nutrition App</h1>
+        <p>Your AI-powered Health Companion</p>
+    </header>
+
+    <nav>
+        <a href="nutrition.html" target="_blank">Nutrition Estimation</a>
+        <a href="insights.html" target="_blank">Food Insights</a>
+        <a href="recipe.html" target="_blank">Recipe Suggestions</a>
+        <a href="allergen.html" target="_blank">Allergen Check</a>
+    </nav>
+
+    <main>
+        <!-- Nutrition Estimation -->
+        <section class="card" id="calorie">
+            <h2>Nutrition Estimation</h2>
+            <input type="text" placeholder="Enter food name..." id="nutritionFood" />
+            <button id="nutritionBtn">Estimate Nutrition</button>
+            <div id="calorieResult" class="result-placeholder"></div>
+        </section>
+
+        <!-- Food Insights (Coming Soon) -->
+        <section class="card coming-soon" id="insights">
+            <h2>Food Insights</h2>
+            <div class="coming-hover">Coming Soon!</div>
+        </section>
+
+        <!-- Recipe Suggestions -->
+        <section class="card" id="recipe">
+            <h2>Recipe Suggestions</h2>
+            <input type="text" placeholder="Enter dish name..." id="dishName" />
+            <button id="recipeBtn">Get Recipe</button>
+            <div id="recipeResult" class="result-placeholder"></div>
+        </section>
+
+        <!-- Allergen Detection -->
+        <section class="card" id="allergen">
+            <h2>Allergen Detection</h2>
+            <input type="text" placeholder="Enter food name..." id="allergenFood" />
+            <button id="allergenBtn">Check Allergens</button>
+            <div id="allergenResult" class="result-placeholder"></div>
+        </section>
+    </main>
+
+    <footer>
+        © 2025 The Nutrition App Team
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,309 @@
+/* ========== Reset and Fonts ========== */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Quicksand', sans-serif;
+}
+
+body {
+    background-color: #f0fff4;
+    color: #333;
+}
+
+
+/* ========== Logo Styling ========== */
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 1rem;
+}
+
+
+/* ========== Header ========== */
+
+header {
+    background-color: #b2f2bb;
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: #2e7d32;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #388e3c;
+}
+
+
+/* ========== Navigation Bar ========== */
+
+nav {
+    background-color: #d9fdd3;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+    text-decoration: none;
+    color: #2e7d32;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    transition: background-color 0.3s;
+}
+
+nav a:hover {
+    background-color: #a5d6a7;
+}
+
+
+/* ========== Main Layout ========== */
+
+main {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+
+/* ========== Card Style ========== */
+
+.card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.02);
+}
+
+.card h2 {
+    color: #388e3c;
+    margin-bottom: 1rem;
+}
+
+
+/* ========== Form Inputs ========== */
+
+input[type="text"],
+input[type="file"] {
+    width: 100%;
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+
+/* ========== Buttons ========== */
+
+button {
+    background-color: #81c784;
+    color: white;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #66bb6a;
+}
+
+
+/* ========== Result Text Placeholders ========== */
+
+.result-placeholder {
+    margin-top: 1rem;
+    color: #2e7d32;
+    font-size: 0.95rem;
+    font-style: italic;
+}
+
+
+/* ========== Footer ========== */
+
+footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #b2f2bb;
+    color: #2e7d32;
+    font-weight: bold;
+    margin-top: 2rem;
+}
+
+
+/* ========== Allergen Detection Results ========== */
+
+.allergen-results {
+    padding: 10px;
+}
+
+.allergen-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.allergen-item strong {
+    color: #2e7d32;
+}
+
+.allergen-item em {
+    color: #6c757d;
+    font-style: normal;
+    font-weight: 600;
+}
+
+hr {
+    border: 0;
+    height: 1px;
+    background-color: #e0e0e0;
+    margin: 10px 0;
+}
+
+
+/* ========== Nutrition Facts Box ========== */
+
+.nutrition-facts {
+    background-color: #f8f9fa;
+    padding: 15px;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.nutrition-facts strong {
+    color: #2e7d32;
+    display: block;
+    margin-bottom: 8px;
+}
+
+.nutrition-facts span {
+    display: inline-block;
+    width: 120px;
+    font-weight: 600;
+}
+
+
+/* ========== Recipe Results ========== */
+
+.recipe-results {
+    padding: 10px;
+}
+
+.recipe-item {
+    margin-bottom: 15px;
+    padding: 10px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.recipe-item h3 {
+    color: #2e7d32;
+    margin-bottom: 8px;
+}
+
+.recipe-item p {
+    margin-bottom: 8px;
+}
+
+.recipe-item a {
+    color: #388e3c;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.recipe-item a:hover {
+    text-decoration: underline;
+}
+
+
+/* ========== Recipe Cards ========== */
+
+.recipes-container {
+    display: grid;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.recipe-card {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 12px;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    border-left: 4px solid #81c784;
+}
+
+.recipe-card h3 {
+    color: #2e7d32;
+    margin-bottom: 1rem;
+}
+
+.recipe-section {
+    margin-bottom: 1rem;
+}
+
+.recipe-section h4 {
+    color: #388e3c;
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+}
+
+
+/* ========== Loading, Message, Error States ========== */
+
+.loading,
+.message,
+.error {
+    padding: 1rem;
+    text-align: center;
+    border-radius: 8px;
+}
+
+.error {
+    background: #ffebee;
+    color: #c62828;
+}
+
+
+/* ========== Loading Spinner ========== */
+
+.spinner {
+    margin: 20px auto;
+    width: 40px;
+    height: 40px;
+    border: 5px solid #d9fdd3;
+    border-top: 5px solid #2e7d32;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}

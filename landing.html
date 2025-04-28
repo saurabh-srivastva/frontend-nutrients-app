@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Nutrition App - Welcome</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="favicon.png">
+
+    <!-- Landing Page CSS -->
+    <link rel="stylesheet" href="landing.css">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header -->
+    <header>
+        <h1>Welcome to The Nutrition App</h1>
+        <p>Your AI-powered Health Companion</p>
+    </header>
+
+    <!-- Features Section -->
+    <main class="features-section">
+        <a href="nutrition.html" class="feature-link">
+            <div class="feature-card">
+                <h2>🍎 Nutrition Estimation</h2>
+                <p>Estimate calories, protein, carbs, fats for any food!</p>
+            </div>
+        </a>
+
+        <a href="insights.html" class="feature-link">
+            <div class="feature-card coming-soon">
+                <h2>🔎 Food Insights</h2>
+                <div class="coming-hover">Coming Soon!</div>
+            </div>
+        </a>
+
+        <a href="recipe.html" class="feature-link">
+            <div class="feature-card">
+                <h2>📋 Recipe Suggestions</h2>
+                <p>Get smart, healthy recipe ideas in seconds!</p>
+            </div>
+        </a>
+
+        <a href="allergen.html" class="feature-link">
+            <div class="feature-card">
+                <h2>⚡ Allergen Detection</h2>
+                <p>Check hidden allergens and stay safe!</p>
+            </div>
+        </a>
+    </main>
+
+    <!-- Start Now Button -->
+    <div class="start-btn-container">
+        <a href="index.html" class="start-btn">Start Now</a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        © 2025 The Nutrition App Team
+    </footer>
+
+    <!-- Preloader Script -->
+    <script>
+        window.addEventListener('load', function() {
+            const preloader = document.getElementById('preloader');
+            preloader.style.opacity = '0';
+            preloader.style.transition = 'opacity 1s ease-out';
+            setTimeout(() => preloader.style.display = 'none', 1000);
+        });
+    </script>
+
+</body>
+
+</html>
